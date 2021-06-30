@@ -47,8 +47,8 @@ const IndexPage = () => {
         <title>The Communicative Engineer</title>
       </Helmet>
       <div class='pageStyle' style={fullScreen, headingStyles}>
-        <img src={book} width="100%" alt="Standing book mockup"/>
-        <StaticImage src={book} alt="Standing book mockup" />
+        <img src={book} width="640px" alt="Standing book mockup"/>
+        {/* <StaticImage src={book} alt="Standing book mockup" /> */}
         <h1>
           We have a responsibility to be skilled communicators.
         </h1>
