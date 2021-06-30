@@ -18,6 +18,11 @@ html {
     /* background-color: #EDDEC7; */
 }
 
+img {
+    width: 640px;
+    height: 590px;
+}
+
 ul {
     margin-bottom: 1.5rem;
 }
@@ -62,5 +67,10 @@ h3 {
     
     .pageStyle {
         width: 70%;
+    }
+
+    img {
+        width: 320px;
+        height: 295px;
     }
 }
