@@ -1,9 +1,8 @@
 import * as React from "react"
  import {Helmet} from "react-helmet"
- import { StaticImage } from "gatsby-plugin-image"
 
 
-import book from '../images/mockup-smaller.png'
+import book from '../images/mockup.png'
 
 import './style.css'
 
@@ -48,7 +47,7 @@ const IndexPage = () => {
       </Helmet>
       <div class='pageStyle' style={fullScreen, headingStyles}>
         <img src={book} width="640px" alt="Standing book mockup"/>
-        {/* <StaticImage src={book} alt="Standing book mockup" /> */}
+        
         <h1>
           We have a responsibility to be skilled communicators.
         </h1>
@@ -118,6 +117,11 @@ const IndexPage = () => {
           If you're interested in being a part of that process, or just want to learn more about the book, consider reaching out to me at thebuffed [at] gmail.com or following me on <a href="twitter.com/thebuffed">Twitter</a>
         </p>
 
+        <br />
+        <br />
+        <p>
+          Made with ♡ by Eric Davidson
+        </p>
         <div style={headingStyles}>
           <img
             
