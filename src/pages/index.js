@@ -1,7 +1,9 @@
 import * as React from "react"
  import {Helmet} from "react-helmet"
+ import { StaticImage } from "gatsby-plugin-image"
 
-import book from '../images/mockup-webp.webp'
+
+import book from '../images/mockup.png'
 
 import './style.css'
 
@@ -14,13 +16,6 @@ const headingStyles = {
 const fullScreen = {
   height: '100vh',
   textAlign: 'center',
-}
-
-const emailStyles = {
-  width: "100%",
-  height: "220px",
-  border: "2px #ccc solid !important"
-
 }
 
 const benefits = [
@@ -53,6 +48,7 @@ const IndexPage = () => {
       </Helmet>
       <div class='pageStyle' style={fullScreen, headingStyles}>
         <img src={book} width="100%" alt="Standing book mockup"/>
+        <StaticImage src={book} alt="Standing book mockup" />
         <h1>
           We have a responsibility to be skilled communicators.
         </h1>
@@ -130,9 +126,9 @@ const IndexPage = () => {
           />
         </div>
       </main>
-      <NotificationContainer/>
     </html>
   )
 }
+
 
 export default IndexPage
