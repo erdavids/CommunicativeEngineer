@@ -1,7 +1,7 @@
 import * as React from "react"
 import {useState} from "react"
 import {NotificationContainer, NotificationManager} from 'react-notifications';
- 
+ import {Helmet} from "react-helmet"
 
 import book from '../images/mockup.png'
 import semicolon from '../images/semicolon.png';
@@ -50,9 +50,13 @@ const benefits = [
 // markup
 const IndexPage = () => {
   return (
-    <>
+    <html lang="en">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>The Communicative Engineer</title>
+      </Helmet>
       <div class='pageStyle' style={fullScreen, headingStyles}>
-        <img src={book} width="100%"/>
+        <img src={book} width="100%" alt="Standing book mockup"/>
         <h1>
           We have a responsibility to be skilled communicators.
         </h1>
@@ -119,14 +123,8 @@ const IndexPage = () => {
           As I finish each stage of the book, I plan to publish as much as I can for direct feedback and editing suggestions. Ultimately I want to draw on the community of people that have built up an immesurable amount of collective experience and make sure I'm producing the best resource possible.
         </p>
         <p>
-          If you're interested in being a part of that process, or just want to learn more about the book, consider subscribing below. No spam, I promise.
+          If you're interested in being a part of that process, or just want to learn more about the book, consider reaching out to me at thebuffed [at] gmail.com or following me on <a href="twitter.com/thebuffed">Twitter</a>
         </p>
-
-        <iframe
-          scrolling="no"
-          style={emailStyles}
-          src="https://buttondown.email/thebuffed?as_embed=true"
-          ></iframe><br /><br />
 
         <div style={headingStyles}>
           <img
@@ -137,7 +135,7 @@ const IndexPage = () => {
         </div>
       </main>
       <NotificationContainer/>
-    </>
+    </html>
   )
 }
 
