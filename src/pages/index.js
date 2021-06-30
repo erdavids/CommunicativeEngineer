@@ -3,7 +3,7 @@ import * as React from "react"
  import { StaticImage } from "gatsby-plugin-image"
 
 
-import book from '../images/mockup.png'
+import book from '../images/mockup-smaller.png'
 
 import './style.css'
 
