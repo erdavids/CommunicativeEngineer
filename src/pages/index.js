@@ -1,14 +1,9 @@
 import * as React from "react"
-import {useState} from "react"
-import {NotificationContainer, NotificationManager} from 'react-notifications';
  import {Helmet} from "react-helmet"
 
-import book from '../images/mockup.png'
-import semicolon from '../images/semicolon.png';
-import pr from '../images/PR.png'
+import book from '../images/mockup-webp.webp'
 
 import './style.css'
-import 'react-notifications/lib/notifications.css';
 
 // styles
 
@@ -53,6 +48,7 @@ const IndexPage = () => {
     <html lang="en">
       <Helmet>
         <meta charSet="utf-8" />
+        <meta name="description" content="A book about creating a culture of intentional communication."></meta>
         <title>The Communicative Engineer</title>
       </Helmet>
       <div class='pageStyle' style={fullScreen, headingStyles}>
